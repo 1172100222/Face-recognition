@@ -18,7 +18,7 @@ A **regression** model predicts continuous values while a **classification** mod
 **Loss** is a number indicating how bad the model's prediction was on a single example.
 
 ### Gradient Descent
-First pick starting values for the weights, then calculates the gradient of the loss curve at the starting point. The gradient descent algorithm takes a step in the direction of the negative gradient in order to reduce loss as quickly as possible. Then add some fraction of the gradient's magnitude to the starting point to determine the next point along the loss function curve. The gradient descent then repeats this process until overall loss stops changing or at least changes extremely slowly.  When that happens, we say that the model has **converged**.
+First, pick starting values for the weights, then calculates the gradient of the loss curve at the starting point. The gradient descent algorithm takes a step in the direction of the negative gradient in order to reduce loss as quickly as possible. Then add some fraction of the gradient's magnitude to the starting point to determine the next point along the loss function curve. The gradient descent then repeats this process until overall loss stops changing or at least changes extremely slowly.  When that happens, we say that the model has **converged**.
 
 Note that gradient descent algorithms multiply the gradient by a scalar known as the learning rate (also sometimes called step size) to determine the next point. The ideal learning rate in one-dimension is the inverse of the second derivative of f(x) at x; the ideal learning rate for 2 or more dimensions is the inverse of the Hessian. (**Here we assume the resulting plot of loss is convex.**)
 
