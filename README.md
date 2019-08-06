@@ -22,7 +22,7 @@ First pick starting values for the weights, then calculates the gradient of the 
 
 Note that gradient descent algorithms multiply the gradient by a scalar known as the learning rate (also sometimes called step size) to determine the next point. The ideal learning rate in one-dimension is the inverse of the second derivative of f(x) at x; the ideal learning rate for 2 or more dimensions is the inverse of the Hessian. (**Here we assume the resulting plot of loss is convex.**)
 
-In gradient descent, a **batch** is the total number of examples we use to calculate the gradient in a single iteration. When working at very large scale data sets, a very large batch may cause even a single iteration to take a very long time to compute. So we often choose *Stochastic Gradient Descent* (SGD, it uses only a single example (a batch size of 1) per iteration) or *Mini-batch Stochastic Gradient Descent* (mini-batch SGD, a mini-batch is typically between 10 and 1,000 examples, chosen at random.) rather than *Full Gradient Descent.*
+In gradient descent, a **batch** is the total number of examples we use to calculate the gradient in a single iteration. When working at very large scale data sets, a very large batch may cause even a single iteration to take a very long time to compute. So we often choose **Stochastic Gradient Descent** (SGD, it uses only a single example (a batch size of 1) per iteration) or **Mini-batch Stochastic Gradient Descent** (mini-batch SGD, a mini-batch is typically between 10 and 1,000 examples, chosen at random.) rather than *Full Gradient Descent.*
 
 Given enough iterations, SGD works but is very noisy. 
 
