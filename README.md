@@ -1,7 +1,7 @@
 # Face-recognition
 Y.T Tao and B.H Chen's learning project of face recognition.
 
-## First step
+## Preparation
 A **label** is the thing we're predicting (y). A **feature** is an input variable (x). An example is a particular instance of data, **x**. There are two kinds of examples: 
 - labeled examples: A labeled example includes both feature(s) and the label.
 - unlabeled examples: An unlabeled example contains features but not the label.
